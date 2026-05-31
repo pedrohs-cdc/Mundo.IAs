@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explorando o mundo das Inteligencias Artificiais - Claude, Gemini, ChatGPT, Nano Banana e NotebookLM. Atividade academica de Ciencia da Computacao.">
+  <title>O Mundo das IAs | Ciencia da Computacao</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <nav class="nav" id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">mundo<span>.</span>ias</a>
+      <div class="nav-sep"></div>
+      <ul class="nav-links">
+        <li><a href="#hero">Inicio</a></li>
+        <li><a href="#carousel">As IAs</a></li>
+        <li><a href="/problema-solucao/">Problema &amp; Solucao</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="scroll-dots" id="scroll-dots">
+    <div class="scroll-dot" data-index="0"><span class="scroll-dot-label">Claude</span></div>
+    <div class="scroll-dot" data-index="1"><span class="scroll-dot-label">Gemini</span></div>
+    <div class="scroll-dot" data-index="2"><span class="scroll-dot-label">ChatGPT</span></div>
+    <div class="scroll-dot" data-index="3"><span class="scroll-dot-label">Nano Banana</span></div>
+    <div class="scroll-dot" data-index="4"><span class="scroll-dot-label">NotebookLM</span></div>
+  </div>
+  <section class="hero" id="hero">
+    <canvas class="hero-canvas" id="hero-canvas"></canvas>
+    <div class="hero-grid"></div>
+    <div class="hero-bg-glow glow-1"></div>
+    <div class="hero-bg-glow glow-2"></div>
+    <div class="hero-badge">Atividade Academica &mdash; Ciencia da Computacao</div>
+    <h1>Explorando o<br><span class="gradient-text">Mundo das IAs</span></h1>
+    <p class="hero-description">Uma jornada pelas cinco inteligencias artificiais que estao redefinindo como criamos, aprendemos e resolvemos problemas. Scroll para conhecer cada uma delas.</p>
+    <div class="hero-cta-group">
+      <a href="#carousel" class="btn-primary">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+        Conhecer as IAs
+      </a>
+      <a href="/problema-solucao/" class="btn-secondary">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 1 1 7.072 0l-.548.547A3.374 3.374 0 0 0 14 18.469V19a2 2 0 1 1-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+        Problema &amp; Solucao
+      </a>
+    </div>
+    <div class="hero-scroll-hint"><span>Scroll</span><div class="scroll-line"></div></div>
+  </section>
+  <div class="ai-carousel" id="carousel">
+    <section class="ai-section" data-ai="claude">
+      <div class="ai-section-sticky">
+        <div class="ai-content">
+          <div class="ai-number">01 / 05</div>
+          <div class="ai-category"><span class="ai-category-dot"></span>Texto &amp; Codigo</div>
+          <h2 class="ai-name">Claude</h2>
+          <p class="ai-maker">por Anthropic</p>
+          <p class="ai-description">Claude e um assistente de IA desenvolvido pela Anthropic com foco em seguranca e alinhamento. Projetado para ser util, inofensivo e honesto, ele se destaca pela capacidade de analisar documentos longos, escrever codigo de alta qualidade e manter conversas com contexto extenso.</p>
+          <div class="ai-features">
+            <div class="ai-feature"><span class="ai-feature-dot"></span>Janela de contexto de ate 200k tokens</div>
+            <div class="ai-feature"><span class="ai-feature-dot"></span>Foco em seguranca e alinhamento (Constitutional AI)</div>
+            <div class="ai-feature"><span class="ai-feature-dot"></span>Excelente em analise de codigo e documentos</div>
+            <div class="ai-feature"><span class="ai-feature-dot"></span>Raciocinio nuancado e respostas equilibradas</div>
+          </div>
+          <div class="ai-example"><strong>Exemplo de uso pratico</strong> Revisar um PDF de 200 paginas, encontrar contradicoes entre secoes e gerar um resumo executivo &mdash; tudo em uma unica conversa.</div>
+        </div>
+        <div class="ai-image-wrapper"><div class="ai-image-glow"></div><img class="ai-image" src="./img/claude.png" alt="Claude AI"></div>
+      </div>
+    </section>
+    <section class="ai-section" data-ai="gemini">
+      <div class="ai-section-sticky">
+        <div class="ai-content">
+          <div class="ai-number">02 / 05</div>
+          <div class="ai-category"><span class="ai-category-dot"></span>Multimodal &amp; Pesquisa</div>
+          <h2 class="ai-name">Gemini</h2>
+          <p class="ai-maker">por Google DeepMind</p>
+          <p class="ai-description">Gemini e a familia de modelos multimodais do Google, capaz de processar texto, imagens, audio e video nativamente. Integrado profundamente ao ecossistema Google, ele representa a uniao do Google Brain com a DeepMind para criar a IA mais versatil da empresa.</p>
+          <div class="ai-features">
+            <div class="ai-feature"><span class="ai-feature-dot"></span>Multimodal nativo (texto, imagem, audio, video)</div>
+            <div class="ai-feature"><span class="ai-feature-dot"></span>Integrado ao Google Workspace e Android</div>
+            <div class="ai-feature"><span class="ai-feature-dot"></span>Versoes Ultra, Pro e Flash para diferentes usos</div>
+            <div class="ai-feature"><span class="ai-feature-dot"></span>Janela de contexto de ate 2 milhoes de tokens</div>
+          </div>
+          <div class="ai-example"><strong>Exemplo de uso pratico</strong> Enviar um video de aula em fisica e pedir que o Gemini gere um resumo escrito + 10 questoes de revisao baseadas no conteudo.</div>
+        </div>
+        <div class="ai-image-wrapper"><div class="ai-image-glow"></div><img class="ai-image" src="./img/gemini.png" alt="Gemini AI"></div>
+      </div>
+    </section>
+    <section class="ai-section" data-ai="chatgpt">
+      <div class="ai-section-sticky">
+        <div class="ai-content">
+          <div class="ai-number">03 / 05</div>
+          <div class="ai-category"><span class="ai-category-dot"></span>Texto, Imagem &amp; Voz</div>
+          <h2 class="ai-name">ChatGPT</h2>
+          <p class="ai-maker">por OpenAI</p>
+          <p class="ai-description">ChatGPT popularizou a inteligencia artificial generativa para o mundo todo. Baseado nos modelos GPT, ele oferece conversacao natural, geracao de codigo, analise de dados e criacao de conteudo, sendo a IA mais utilizada globalmente com centenas de milhoes de usuarios ativos.</p>
+          <div class="ai-features">
+            <div class="ai-feature"><span class="ai-feature-dot"></span>Modelo GPT-4o com capacidades multimodais</div>
+            <div class="ai-feature"><span class="ai-feature-dot"></span>Ecossistema de plugins e GPTs personalizados</div>
+            <div class="ai-feature"><span class="ai-feature-dot"></span>Mais de 200 milhoes de usuarios ativos</div>
+            <div class="ai-feature"><span class="ai-feature-dot"></span>Geracao de imagens com DALL-E integrado</div>
+          </div>
+          <div class="ai-example"><strong>Exemplo de uso pratico</strong> Criar um GPT personalizado para um time de marketing que gera posts de blog, hashtags e imagens promocionais a partir de um briefing curto.</div>
+        </div>
+        <div class="ai-image-wrapper"><div class="ai-image-glow"></div><img class="ai-image" src="./img/chatgpt.png" alt="ChatGPT"></div>
+      </div>
+    </section>
+    <section class="ai-section" data-ai="nano">
+      <div class="ai-section-sticky">
+        <div class="ai-content">
+          <div class="ai-number">04 / 05</div>
+          <div class="ai-category"><span class="ai-category-dot"></span>Geracao de Imagens</div>
+          <h2 class="ai-name">Nano Banana</h2>
+          <p class="ai-maker">por Google (Gemini 2.5 Flash Image)</p>
+          <p class="ai-description">Nano Banana e o modelo de geracao e edicao de imagens da familia Gemini, lancado pelo Google em 2025. Famoso pela consistencia ao editar fotos mantendo o personagem original, ele permite trocar fundo, roupa ou estilo sem perder a identidade do rosto.</p>
+          <div class="ai-features">
+            <div class="ai-feature"><span class="ai-feature-dot"></span>Geracao e edicao de imagens em alta qualidade</div>
+            <div class="ai-feature"><span class="ai-feature-dot"></span>Mantem consistencia de personagens entre edicoes</div>
+            <div class="ai-feature"><span class="ai-feature-dot"></span>Edicao por linguagem natural</div>
+            <div class="ai-feature"><span class="ai-feature-dot"></span>Disponivel via Gemini app e API Google AI Studio</div>
+          </div>
+          <div class="ai-example"><strong>Exemplo de uso pratico</strong> Enviar uma foto de produto e gerar 12 variacoes em diferentes cenarios mantendo o objeto identico &mdash; ideal para e-commerce.</div>
+        </div>
+        <div class="ai-image-wrapper"><div class="ai-image-glow"></div><img class="ai-image" src="./img/nanobanana.png" alt="Nano Banana AI"></div>
+      </div>
+    </section>
+    <section class="ai-section" data-ai="notebook">
+      <div class="ai-section-sticky">
+        <div class="ai-content">
+          <div class="ai-number">05 / 05</div>
+          <div class="ai-category"><span class="ai-category-dot"></span>Pesquisa &amp; Estudo</div>
+          <h2 class="ai-name">NotebookLM</h2>
+          <p class="ai-maker">por Google</p>
+          <p class="ai-description">NotebookLM e um assistente de pesquisa baseado em IA que transforma seus proprios documentos em uma fonte de conhecimento interativa. Ele le PDFs, artigos e anotacoes, e responde perguntas baseado exclusivamente no material fornecido, ideal para estudo academico e pesquisa.</p>
+          <div class="ai-features">
+            <div class="ai-feature"><span class="ai-feature-dot"></span>Respostas baseadas nos seus proprios documentos</div>
+            <div class="ai-feature"><span class="ai-feature-dot"></span>Geracao automatica de podcasts (Audio Overview)</div>
+            <div class="ai-feature"><span class="ai-feature-dot"></span>Ideal para estudo e revisao academica</div>
+            <div class="ai-feature"><span class="ai-feature-dot"></span>Citacoes com fontes do material original</div>
+          </div>
+          <div class="ai-example"><strong>Exemplo de uso pratico</strong> Subir 15 artigos de TCC, pedir um resumo comparativo entre eles e gerar um podcast de 12 minutos discutindo os pontos principais para revisar no carro a caminho da prova.</div>
+        </div>
+        <div class="ai-image-wrapper"><div class="ai-image-glow"></div><img class="ai-image" src="./img/notebooklm.png" alt="NotebookLM"></div>
+      </div>
+    </section>
+  </div>
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="footer-text">2026 &mdash; Atividade de Ciencia da Computacao</p>
+      <div class="footer-links">
+        <a href="#hero">Inicio</a>
+        <a href="#carousel">As IAs</a>
+      </div>
+    </div>
+  </footer>
+  <script src="./script.js"></script>
+</body>
+</html>
